@@ -1,0 +1,25 @@
+@value accent, border from 'styles/colors.css';
+
+.text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  padding: .65625rem 0 .98438rem;
+}
+
+.text a {
+  color: accent;
+}
+
+.media {
+  border-radius: .35rem;
+  border: 1px solid border;
+  display: block;
+  margin: .65625rem 0 1.3125rem;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}

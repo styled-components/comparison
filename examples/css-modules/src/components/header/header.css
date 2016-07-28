@@ -1,0 +1,45 @@
+@value primary, secondary from 'styles/colors.css';
+
+.header {
+  display: flex;
+  padding: 1rem 0 .65625rem;
+}
+
+.profile {
+  flex: 1 0 0;
+  margin: 0 .3rem;
+}
+
+.image {
+  border-radius: .35rem;
+  display: block;
+  width: 100%;
+}
+
+.user {
+  flex: 7 0 0;
+  margin: 0 .3rem;
+}
+
+.url {
+  display: inline-block;
+  margin-top: -.15rem;
+}
+
+.url:hover .name {
+  text-decoration: underline;
+}
+
+.name {
+  color: primary;
+  font-weight: 700;
+}
+
+.screenName {
+  color: secondary;
+}
+
+.screenName:before {
+  content: '\a';
+  white-space: pre;
+}

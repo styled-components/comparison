@@ -1,0 +1,43 @@
+@value primary from 'styles/colors.css';
+
+html {
+  color: primary;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3125;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  fill: currentColor;
+  height: 1.25em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}
+

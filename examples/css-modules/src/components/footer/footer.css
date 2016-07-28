@@ -1,0 +1,69 @@
+@value animation, border, secondary from 'styles/colors.css';
+
+.date {
+  padding-bottom: .98438rem;
+  color: secondary;
+}
+
+.counters {
+  border-top: 1px solid border;
+  padding: .98438rem 0;
+  text-transform: uppercase;
+}
+
+.value {
+  font-weight: 700;
+}
+
+.label {
+  color: secondary;
+  font-size: .85rem;
+}
+
+.favorite {
+  display: inline-block;
+  margin-left: 1.96875rem;
+}
+
+.actions {
+  align-items: center;
+  border-bottom: 1px solid border;
+  border-top: 1px solid border;
+  color: secondary;
+  display: flex;
+  font-size: 1.5rem;
+  height: 3.28125rem;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  composes: icon;
+
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  outline: none;
+}
+
+.liked {
+  animation: liked .25s;
+  color: animation;
+}
+
+@keyframes liked {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
