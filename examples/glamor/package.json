@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify index.js -o bundle.js -t [ babelify --presets [ es2015 stage-0 react ] --plugins [ transform-decorators-legacy ] ]"
+    "build": "browserify index.js -o bundle.js -t babelify -d"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +21,9 @@
     "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0"
+  },
+  "babel": {
+    "presets": ["es2015", "stage-0", "react"],
+    "plugins": ["transform-decorators-legacy"]
   }
 }
