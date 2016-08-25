@@ -2,7 +2,6 @@ import { createElement } from 'glamor/react' // eslint-disable-line no-unused-va
 /** @jsx createElement */
 
 
-// @value primary, secondary from 'styles/colors.css';
 import React, { PropTypes } from 'react'
 import { merge, select, before } from 'glamor'
 import { vars } from 'glamor/react'
