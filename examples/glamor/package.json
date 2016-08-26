@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "glamor": "^2.12.1",
+    "glamor": "^2.13.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
   },
