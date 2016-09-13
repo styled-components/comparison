@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 
-import styles from './header.css'
+import styles from './header.css';
 
 const Header = ({ name, profileImageUrl, screenName, url }) => (
   <div className={styles.header}>
@@ -16,13 +16,13 @@ const Header = ({ name, profileImageUrl, screenName, url }) => (
       </a>
     </div>
   </div>
-)
+);
 
 Header.propTypes = {
   name: PropTypes.string,
   profileImageUrl: PropTypes.string,
   screenName: PropTypes.string,
   url: PropTypes.string,
-}
+};
 
-export default Header
+export default Header;

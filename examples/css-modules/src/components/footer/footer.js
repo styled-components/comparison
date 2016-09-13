@@ -1,33 +1,33 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react';
 
-import ReplyIcon from 'assets/reply.svg'
-import RetweetIcon from 'assets/retweet.svg'
-import LikeIcon from 'assets/like.svg'
-import MoreIcon from 'assets/more.svg'
+import ReplyIcon from 'assets/reply.svg';
+import RetweetIcon from 'assets/retweet.svg';
+import LikeIcon from 'assets/like.svg';
+import MoreIcon from 'assets/more.svg';
 
-import styles from './footer.css'
+import styles from './footer.css';
 
 class Footer extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       liked: false,
-    }
+    };
 
-    this.handleClick = this.handleClick.bind(this)
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
     this.setState({
       liked: !this.state.liked,
-    })
+    });
   }
 
   render() {
-    const { createdAt, favoriteCount, retweetCount } = this.props
-    const { liked } = this.state
+    const { createdAt, favoriteCount, retweetCount } = this.props;
+    const { liked } = this.state;
 
     return (
       <div>
@@ -59,7 +59,7 @@ class Footer extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 
 }
@@ -68,6 +68,6 @@ Footer.propTypes = {
   createdAt: PropTypes.string,
   favoriteCount: PropTypes.number,
   retweetCount: PropTypes.number,
-}
+};
 
-export default Footer
+export default Footer;

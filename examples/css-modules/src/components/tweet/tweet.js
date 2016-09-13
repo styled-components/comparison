@@ -1,11 +1,11 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 
-import Header from 'components/header'
-import Content from 'components/content'
-import Footer from 'components/footer'
-import { transform } from 'utils/text'
+import Header from 'components/header';
+import Content from 'components/content';
+import Footer from 'components/footer';
+import { transform } from 'utils/text';
 
-import styles from './tweet.css'
+import styles from './tweet.css';
 
 const Tweet = ({ data }) => (
   <div className={styles.container}>
@@ -25,10 +25,10 @@ const Tweet = ({ data }) => (
       retweetCount={data.retweet_count}
     />
   </div>
-)
+);
 
 Tweet.propTypes = {
   data: PropTypes.object,
-}
+};
 
-export default Tweet
+export default Tweet;

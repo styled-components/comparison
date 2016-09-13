@@ -1,7 +1,7 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const autoprefixer = require('autoprefixer')
-const values = require('postcss-modules-values')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const values = require('postcss-modules-values');
 
 module.exports = {
   entry: './src',
@@ -45,7 +45,11 @@ module.exports = {
     ],
   },
 
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/templates/index.ejs',
+    }),
+  ],
 
   postcss: () => [autoprefixer, values],
-}
+};
