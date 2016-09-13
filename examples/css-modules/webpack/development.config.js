@@ -1,4 +1,3 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const values = require('postcss-modules-values');
@@ -9,12 +8,6 @@ module.exports = {
   output: {
     path: 'build',
     filename: 'bundle.js',
-  },
-
-  resolve: {
-    root: [
-      path.resolve(process.cwd(), './src'),
-    ],
   },
 
   module: {
