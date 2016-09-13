@@ -4,8 +4,8 @@
   "description": "The examples",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \"./**/src/**/*.js\" --ignore-path ../.gitignore",
-    "test": "mocha --compilers js:babel-register \"./utils/**/*.spec.js\""
+    "lint": "eslint \"./{**/src,shared}/**/*.js\" --ignore-path ../.gitignore",
+    "test": "mocha --compilers js:babel-register \"./shared/**/*.spec.js\""
   },
   "author": "Max Stoiber <contact@mxstbr.com> (http://mxstbr.com)",
   "license": "MIT",

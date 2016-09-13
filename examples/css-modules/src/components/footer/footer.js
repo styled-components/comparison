@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 
-import ReplyIcon from '../../assets/reply.svg';
-import RetweetIcon from '../../assets/retweet.svg';
-import LikeIcon from '../../assets/like.svg';
-import MoreIcon from '../../assets/more.svg';
+import ReplyIcon from '../../../../shared/assets/reply.svg';
+import RetweetIcon from '../../../../shared/assets/retweet.svg';
+import LikeIcon from '../../../../shared/assets/like.svg';
+import MoreIcon from '../../../../shared/assets/more.svg';
 
 import styles from './footer.css';
 
