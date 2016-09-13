@@ -26,6 +26,7 @@
     "eslint-plugin-react": "5.2.2",
     "html-webpack-plugin": "2.22.0",
     "json-loader": "0.5.4",
+    "lodash": "^4.15.0",
     "mocha": "3.0.0",
     "svg-react-loader": "0.3.6",
     "webpack": "1.13.1",
