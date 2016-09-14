@@ -29,30 +29,30 @@ class Footer extends Component {
 
     return (
       <div>
-        <div className="date">{createdAt}</div>
-        <div className="counters">
+        <div className="footer__date">{createdAt}</div>
+        <div className="footer__counters">
           <span>
-            <span className="value">{retweetCount}</span>
-            <span className="label"> Retweets</span>
+            <span className="footer__value">{retweetCount}</span>
+            <span className="footer__label"> Retweets</span>
           </span>
-          <span className="favorite">
-            <span className="value">
+          <span className="footer__favorite">
+            <span className="footer__value">
               {liked ? favoriteCount + 1 : favoriteCount}
             </span>
-            <span className="label"> Likes</span>
+            <span className="footer__label"> Likes</span>
           </span>
         </div>
-        <div className="actions">
-          <div className="icon">
+        <div className="footer__actions">
+          <div className="footer__icon">
             <ReplyIcon />
           </div>
-          <div className="icon">
+          <div className="footer__icon">
             <RetweetIcon />
           </div>
-          <button className="button" onClick={this.handleClick}>
-            <LikeIcon className={liked && 'liked'} />
+          <button className="footer__button" onClick={this.handleClick}>
+            <LikeIcon className={liked && 'footer__liked'} />
           </button>
-          <div className="icon">
+          <div className="footer__icon">
             <MoreIcon />
           </div>
         </div>

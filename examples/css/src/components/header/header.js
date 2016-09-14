@@ -2,15 +2,15 @@ import React, { PropTypes } from 'react';
 
 const Header = ({ name, profileImageUrl, screenName, url }) => (
   <div className="header">
-    <div className="profile">
+    <div className="header__profile">
       <a href={url}>
         <img className="header__image" src={profileImageUrl} alt={name} />
       </a>
     </div>
-    <div className="user">
-      <a className="url" href={url}>
-        <span className="name">{name}</span>
-        <span className="screenName">@{screenName}</span>
+    <div className="header__user">
+      <a className="header__user-url" href={url}>
+        <span className="header__user-name">{name}</span>
+        <span className="header__user-screenName">@{screenName}</span>
       </a>
     </div>
   </div>
