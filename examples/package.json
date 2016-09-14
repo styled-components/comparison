@@ -1,0 +1,35 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "The examples",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"./{**/src,shared}/**/*.js\" --ignore-path ../.gitignore",
+    "test": "mocha --compilers js:babel-register \"./shared/**/*.spec.js\""
+  },
+  "author": "Max Stoiber <contact@mxstbr.com> (http://mxstbr.com)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "15.2.1",
+    "react-dom": "15.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.11.4",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.11.1",
+    "babel-register": "6.11.6",
+    "eslint": "3.1.1",
+    "eslint-config-airbnb": "9.0.1",
+    "eslint-plugin-import": "1.12.0",
+    "eslint-plugin-jsx-a11y": "2.0.1",
+    "eslint-plugin-react": "5.2.2",
+    "html-webpack-plugin": "2.22.0",
+    "json-loader": "0.5.4",
+    "lodash": "^4.15.0",
+    "mocha": "3.0.0",
+    "svg-react-loader": "0.3.6",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
+  }
+}

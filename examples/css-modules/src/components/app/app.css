@@ -1,4 +1,4 @@
-@value primary from 'styles/colors.css';
+@value primary from '../../styles/colors.css';
 
 html {
   color: primary;
@@ -40,4 +40,3 @@ svg {
     max-width: 600px;
   }
 }
-

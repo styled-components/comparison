@@ -1,4 +1,4 @@
-@value accent, border from 'styles/colors.css';
+@value accent, border from '../../styles/colors.css';
 
 .text {
   font-size: 1.25rem;

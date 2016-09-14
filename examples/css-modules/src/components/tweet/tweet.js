@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 
-import Header from 'components/header';
-import Content from 'components/content';
-import Footer from 'components/footer';
-import { transform } from 'utils/text';
+import Header from '../header';
+import Content from '../content';
+import Footer from '../footer';
+import { transform } from '../../../../shared/utils/text';
 
 import styles from './tweet.css';
 

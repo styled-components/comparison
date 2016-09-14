@@ -1,4 +1,4 @@
-@value animation, border, secondary from 'styles/colors.css';
+@value animation, border, secondary from '../../styles/colors.css';
 
 .date {
   padding-bottom: .98438rem;
