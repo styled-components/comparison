@@ -1,0 +1,191 @@
+/**
+ * General
+ */
+
+html {
+  color: #292f33;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3125;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  fill: currentColor;
+  height: 1.25em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}
+
+/**
+ * Components
+ */
+
+/* Text */
+.text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  padding: .65625rem 0 .98438rem;
+}
+
+.text a {
+  color: #1da1f2;
+}
+
+/* Tweet */
+.tweet {
+  padding: 0 .6rem;
+}
+
+/* Tweet media */
+.media {
+  border-radius: .35rem;
+  border: 1px solid #e1e8ed;
+  display: block;
+  margin: .65625rem 0 1.3125rem;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+/* Footer */
+.date {
+  padding-bottom: .98438rem;
+  color: #8899a6;
+}
+
+.counters {
+  border-top: 1px solid #e1e8ed;
+  padding: .98438rem 0;
+  text-transform: uppercase;
+}
+
+.value {
+  font-weight: 700;
+}
+
+.label {
+  color: #8899a6;
+  font-size: .85rem;
+}
+
+.favorite {
+  display: inline-block;
+  margin-left: 1.96875rem;
+}
+
+.actions {
+  align-items: center;
+  border-bottom: 1px solid #e1e8ed;
+  border-top: 1px solid #e1e8ed;
+  color: #8899a6;
+  display: flex;
+  font-size: 1.5rem;
+  height: 3.28125rem;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  outline: none;
+}
+
+.liked {
+  animation: liked .25s;
+  color: #e81c4f;
+}
+
+@keyframes liked {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  padding: 1rem 0 .65625rem;
+}
+
+.profile {
+  flex: 1 0 0;
+  margin: 0 .3rem;
+}
+
+.header__image {
+  border-radius: .35rem;
+  display: block;
+  width: 100%;
+}
+
+.user {
+  flex: 7 0 0;
+  margin: 0 .3rem;
+}
+
+.url {
+  display: inline-block;
+  margin-top: -.15rem;
+}
+
+.url:hover .name {
+  text-decoration: underline;
+}
+
+.name {
+  color: #292f33;
+  font-weight: 700;
+}
+
+.screenName {
+  color: #8899a6;
+}
+
+.screenName:before {
+  content: '\a';
+  white-space: pre;
+}
