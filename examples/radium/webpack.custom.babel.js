@@ -1,10 +1,11 @@
-import base from '../webpack.base.babel';
+import { extendBaseConfig } from '../webpack.base.babel';
 
-export default base({
+export default extendBaseConfig({
   module: {
     loaders: [
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         loader: 'style!css',
       },
     ],

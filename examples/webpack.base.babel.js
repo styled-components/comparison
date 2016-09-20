@@ -11,9 +11,9 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
  *
  * // example/webpack.custom.babel.js
  *
- * import base from '../webpack.base.babel.js';
+ * import { extend } from '../webpack.base.babel.js';
  *
- * export default base({
+ * export default extend({
  *   custom: webpack,
  *   config: {
  *     here: true,
@@ -26,6 +26,7 @@ const config = {
   output: {
     path: path.resolve(process.cwd(), './build'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   module: {
     loaders: [
@@ -33,6 +34,11 @@ const config = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel',
+      },
+      {
+        test: /\.css$/,
+        include: /node_modules/,
+        loader: 'style!css',
       },
       {
         test: /\.svg$/,
@@ -51,7 +57,7 @@ const config = {
   ],
 };
 
-export default (customConfig) => {
+export const extendBaseConfig = (customConfig) => {
   // eslint-disable-next-line consistent-return
   mergeWith(config, customConfig, (objValue, srcValue) => {
     // Merge array values, e.g. custom plugins or loaders
@@ -62,3 +68,5 @@ export default (customConfig) => {
 
   return config;
 };
+
+export default config;
