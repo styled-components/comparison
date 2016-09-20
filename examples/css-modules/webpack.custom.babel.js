@@ -1,19 +1,14 @@
 import autoprefixer from 'autoprefixer';
 import values from 'postcss-modules-values';
-import base from '../webpack.base.babel';
+import { extendBaseConfig } from '../webpack.base.babel';
 
-export default base({
+export default extendBaseConfig({
   module: {
     loaders: [
       {
         test: /\.css$/,
         exclude: /node_modules/,
         loader: 'style!css?modules!postcss',
-      },
-      {
-        test: /\.css$/,
-        include: /node_modules/,
-        loader: 'style!css',
       },
     ],
   },

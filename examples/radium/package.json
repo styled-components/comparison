@@ -13,7 +13,6 @@
     "css-loader": "0.25.0"
   },
   "dependencies": {
-    "normalize.css": "4.2.0",
     "radium": "0.18.1"
   }
 }

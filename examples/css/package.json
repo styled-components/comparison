@@ -4,15 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "../node_modules/.bin/webpack-dev-server --config webpack.custom.babel.js --content-base build"
+    "start": "../node_modules/.bin/webpack-dev-server --config ../webpack.base.babel.js"
   },
   "author": "Max Stoiber",
-  "license": "MIT",
-  "devDependencies": {
-    "css-loader": "0.25.0",
-    "style-loader": "0.13.1"
-  },
-  "dependencies": {
-    "normalize.css": "4.2.0"
-  }
+  "license": "MIT"
 }
