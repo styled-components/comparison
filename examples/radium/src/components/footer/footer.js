@@ -53,7 +53,10 @@ const styles = {
     textAlign: 'center',
   },
   button: {
-    composes: 'icon',
+    display: 'flex',
+    flexGrow: '1',
+    justifyContent: 'center',
+    textAlign: 'center',
     background: 'none',
     border: 'none',
     color: 'inherit',
