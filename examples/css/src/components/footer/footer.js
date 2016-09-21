@@ -49,7 +49,7 @@ class Footer extends Component {
           <div className="footer__icon">
             <RetweetIcon />
           </div>
-          <button className="footer__button" onClick={this.handleClick}>
+          <button className="footer__icon footer__button" onClick={this.handleClick}>
             <LikeIcon className={liked && 'footer__liked'} />
           </button>
           <div className="footer__icon">
