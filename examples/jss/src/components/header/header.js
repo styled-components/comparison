@@ -42,12 +42,12 @@ const styles = {
 const Header = ({ name, profileImageUrl, screenName, url, sheet }) => (
   <div className={sheet.classes.header}>
     <div className={sheet.classes.profile}>
-      <a href={url}>
+      <a target="_blank" href={url}>
         <img className={sheet.classes.image} src={profileImageUrl} alt={name} />
       </a>
     </div>
     <div className={sheet.classes.user}>
-      <a className={sheet.classes.url} href={url}>
+      <a className={sheet.classes.url} target="_blank" href={url}>
         <span className={sheet.classes.name}>{name}</span>
         <span className={sheet.classes.screenName}>@{screenName}</span>
       </a>

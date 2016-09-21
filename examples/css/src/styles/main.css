@@ -111,6 +111,10 @@ svg {
   color: #1da1f2;
 }
 
+.tweet__text a:hover {
+  text-decoration: underline;
+}
+
 .tweet__media {
   border-radius: .35rem;
   border: 1px solid #e1e8ed;

@@ -8,6 +8,12 @@ const styles = {
     lineHeight: '1.5em',
     margin: 0,
     padding: '.65625rem 0 .98438rem',
+    '& a': {
+      color: '#1da1f2',
+    },
+    '& a:hover': {
+      textDecoration: 'underline',
+    },
   },
   media: {
     borderRadius: '.35rem',
@@ -25,7 +31,7 @@ const styles = {
 const Content = ({ text, media, sheet: { classes } }) => (
   <div>
     <p className={classes.text} dangerouslySetInnerHTML={{ __html: text }} />
-    <a className={classes.media} href={media.expanded_url}>
+    <a className={classes.media} target="_blank" href={media.expanded_url}>
       <img className={classes.image} src={media.media_url_https} alt="" />
     </a>
   </div>
