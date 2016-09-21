@@ -8,6 +8,12 @@ const styles = {
     lineHeight: '1.5em',
     margin: 0,
     padding: '.65625rem 0 .98438rem',
+    '& a': {
+      color: '#1da1f2',
+    },
+    '& a:hover': {
+      textDecoration: 'underline',
+    },
   },
   media: {
     borderRadius: '.35rem',
