@@ -5,12 +5,12 @@ import styles from './header.css';
 const Header = ({ name, profileImageUrl, screenName, url }) => (
   <div className={styles.header}>
     <div className={styles.profile}>
-      <a href={url}>
+      <a target="_blank" href={url}>
         <img className={styles.image} src={profileImageUrl} alt={name} />
       </a>
     </div>
     <div className={styles.user}>
-      <a className={styles.url} href={url}>
+      <a className={styles.url} target="_blank" href={url}>
         <span className={styles.name}>{name}</span>
         <span className={styles.screenName}>@{screenName}</span>
       </a>

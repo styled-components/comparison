@@ -25,7 +25,7 @@ const styles = {
 const Content = ({ text, media }) => (
   <div>
     <p style={styles.text} dangerouslySetInnerHTML={{ __html: text }} />
-    <a style={styles.media} href={media.expanded_url}>
+    <a style={styles.media} target="_blank" href={media.expanded_url}>
       <img style={styles.image} src={media.media_url_https} alt="" />
     </a>
   </div>

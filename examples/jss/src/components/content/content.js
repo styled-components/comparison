@@ -31,7 +31,7 @@ const styles = {
 const Content = ({ text, media, sheet: { classes } }) => (
   <div>
     <p className={classes.text} dangerouslySetInnerHTML={{ __html: text }} />
-    <a className={classes.media} href={media.expanded_url}>
+    <a className={classes.media} target="_blank" href={media.expanded_url}>
       <img className={classes.image} src={media.media_url_https} alt="" />
     </a>
   </div>

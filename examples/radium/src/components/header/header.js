@@ -42,12 +42,12 @@ const styles = {
 const Header = ({ name, profileImageUrl, screenName, url }) => (
   <div style={styles.header}>
     <div style={styles.profile}>
-      <a href={url}>
+      <a target="_blank" href={url}>
         <img style={styles.image} src={profileImageUrl} alt={name} />
       </a>
     </div>
     <div style={styles.user}>
-      <a style={styles.url} href={url}>
+      <a style={styles.url} target="_blank" href={url}>
         <span style={styles.name}>{name}</span>
         <span style={styles.screenNameBefore}></span>
         <span style={styles.screenName}>@{screenName}</span>

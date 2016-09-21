@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 const Content = ({ text, media }) => (
   <div>
     <p className={css(styles.text)} dangerouslySetInnerHTML={{ __html: text }} />
-    <a className={css(styles.media)} href={media.expanded_url}>
+    <a className={css(styles.media)} target="_blank" href={media.expanded_url}>
       <img className={css(styles.image)} src={media.media_url_https} alt="" />
     </a>
   </div>

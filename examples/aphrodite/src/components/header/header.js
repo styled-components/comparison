@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
 const Header = ({ name, profileImageUrl, screenName, url }) => (
   <div className={css(styles.header)}>
     <div className={css(styles.profile)}>
-      <a href={url}>
+      <a target="_blank" href={url}>
         <img className={css(styles.image)} src={profileImageUrl} alt={name} />
       </a>
     </div>
     <div className={css(styles.user)}>
-      <a className={css(styles.url)} href={url}>
+      <a className={css(styles.url)} target="_blank" href={url}>
         <span className={css(styles.name)}>{name}</span>
         <span className={css(styles.screenName)}>@{screenName}</span>
       </a>
