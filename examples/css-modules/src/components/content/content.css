@@ -12,6 +12,10 @@
   color: accent;
 }
 
+.text a:hover {
+  text-decoration: underline;
+}
+
 .media {
   border-radius: .35rem;
   border: 1px solid border;
