@@ -4,9 +4,9 @@ import useSheet from 'react-jss';
 const styles = {
   text: {
     fontSize: '1.25rem',
-    fontWeight: '300',
+    fontWeight: 300,
     lineHeight: '1.5em',
-    margin: '0',
+    margin: 0,
     padding: '.65625rem 0 .98438rem',
   },
   media: {
@@ -22,11 +22,11 @@ const styles = {
   },
 };
 
-const Content = ({ text, media, sheet }) => (
+const Content = ({ text, media, sheet: { classes } }) => (
   <div>
-    <p className={sheet.classes.text} dangerouslySetInnerHTML={{ __html: text }} />
-    <a className={sheet.classes.media} href={media.expanded_url}>
-      <img className={sheet.classes.image} src={media.media_url_https} alt="" />
+    <p className={classes.text} dangerouslySetInnerHTML={{ __html: text }} />
+    <a className={classes.media} href={media.expanded_url}>
+      <img className={classes.image} src={media.media_url_https} alt="" />
     </a>
   </div>
 );

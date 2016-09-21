@@ -25,7 +25,7 @@ const styles = {
   },
   name: {
     color: '#292f33',
-    fontWeight: '700',
+    fontWeight: 700,
     '&:hover': {
       textDecoration: 'underline',
     },

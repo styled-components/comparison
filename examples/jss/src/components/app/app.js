@@ -7,7 +7,6 @@ import data from '../../../../shared/data/755481795206971392.json';
 import 'normalize.css';
 
 const styles = {
-  // Local styles
   container: {
     margin: '0 auto',
     width: '100%',
@@ -20,8 +19,8 @@ const styles = {
   },
 };
 
-const App = (props) => (
-  <div className={props.sheet.classes.container}>
+const App = ({ sheet: { classes } }) => (
+  <div className={classes.container}>
     <Tweet data={data} />
   </div>
 );

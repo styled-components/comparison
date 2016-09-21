@@ -25,7 +25,7 @@ const styles = {
     textTransform: 'uppercase',
   },
   value: {
-    fontWeight: '700',
+    fontWeight: 700,
   },
   label: {
     color: '#8899a6',
@@ -47,13 +47,13 @@ const styles = {
   },
   icon: {
     display: 'flex',
-    flexGrow: '1',
+    flexGrow: 1,
     justifyContent: 'center',
     textAlign: 'center',
   },
   button: {
     display: 'flex',
-    flexGrow: '1',
+    flexGrow: 1,
     justifyContent: 'center',
     textAlign: 'center',
     background: 'none',
