@@ -40,7 +40,7 @@ const App = () => (
 - ✅ Easy to override
 - 😕 Theming (it's CSS, so it works, but it's custom for each implementation, i.e. no standard way of doing it)
 - ✅ Pre-build
-- ❌ Server side rendering
+- 😕 Server side rendering (requires running webpack on the server)
 - ✅ No wrapper components
 
 <sub><i>Legend: ✅ = Yes, ❌ = No, 😕 = Kinda, refer to notes or parentheses</i><sub>
