@@ -1,5 +1,12 @@
+import jss from 'jss';
+import preset from 'jss-preset-default';
+import 'normalize.css';
+
+// Setup JSS with default preset
+jss.setup(preset());
+
 // Global styles
-export default {
+const styles = {
   html: {
     color: '#292f33',
     fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -25,3 +32,6 @@ export default {
     },
   },
 };
+
+// Attach global styles
+jss.createStyleSheet(styles, { named: false }).attach();

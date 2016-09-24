@@ -1,10 +1,8 @@
 import React from 'react';
-import useSheet from 'react-jss';
+import injectSheet from 'react-jss';
 
 import Tweet from '../tweet';
 import data from '../../../../shared/data/755481795206971392.json';
-
-import 'normalize.css';
 
 const styles = {
   container: {
@@ -25,4 +23,4 @@ const App = ({ sheet: { classes } }) => (
   </div>
 );
 
-export default useSheet(App, styles);
+export default injectSheet(styles)(App);

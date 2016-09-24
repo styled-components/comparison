@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import useSheet from 'react-jss';
+import injectSheet from 'react-jss';
 
 import ReplyIcon from '../../../../shared/assets/reply.svg';
 import RetweetIcon from '../../../../shared/assets/retweet.svg';
@@ -131,4 +131,4 @@ Footer.propTypes = {
   retweetCount: PropTypes.number,
 };
 
-export default useSheet(Footer, styles);
+export default injectSheet(styles)(Footer);

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import useSheet from 'react-jss';
+import injectSheet from 'react-jss';
 
 const styles = {
   text: {
@@ -42,4 +42,4 @@ Content.propTypes = {
   text: PropTypes.string,
 };
 
-export default useSheet(Content, styles);
+export default injectSheet(styles)(Content);

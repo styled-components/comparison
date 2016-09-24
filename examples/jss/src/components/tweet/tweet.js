@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import useSheet from 'react-jss';
+import injectSheet from 'react-jss';
 
 import Header from '../header';
 import Content from '../content';
@@ -36,4 +36,4 @@ Tweet.propTypes = {
   data: PropTypes.object,
 };
 
-export default useSheet(Tweet, styles);
+export default injectSheet(styles)(Tweet);

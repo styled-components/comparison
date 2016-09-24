@@ -12,7 +12,7 @@
     "css-loader": "0.25.0",
     "jss": "5.5.4",
     "jss-preset-default": "0.4.0",
-    "react-jss": "3.0.1",
+    "react-jss": "4.0.0",
     "style-loader": "0.13.1"
   },
   "dependencies": {}
