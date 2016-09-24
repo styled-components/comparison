@@ -4,7 +4,7 @@
 
 ```JS
 // app.js
-import { useSheet } from 'react-jss';
+import injectSheet from 'react-jss';
 
 const styles = {
   container: {
@@ -25,14 +25,14 @@ const App = (props) => (
   </div>
 );
 
-export default useSheet(App, styles);
+export default injectSheet(styles)(App);
 ```
 
 ## Checklist
 
 - ✅ No build requirements
-- 😕 Small and lightweight (requires at least two separate packages, plus plugins)
-- ✅ Supports global CSS
+- ✅ Small and lightweight
+- 😕 Supports global CSS (requires separate setup)
 - ✅ Supports entirety of CSS
 - ✅ Colocated
 - ✅ Isolated
@@ -48,5 +48,4 @@ export default useSheet(App, styles);
 #### Notes
 
 - Has plugin system
-- Requires app-level setup
 - Supports all selectors (nesting, children, siblings,…), _requires_ custom `'&selector'` notation though (e.g. `'&:hover'`, `& div`)
