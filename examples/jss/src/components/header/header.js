@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import useSheet from 'react-jss';
+import injectSheet from 'react-jss';
 
 const styles = {
   header: {
@@ -62,4 +62,4 @@ Header.propTypes = {
   url: PropTypes.string,
 };
 
-export default useSheet(Header, styles);
+export default injectSheet(styles)(Header);
