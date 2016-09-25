@@ -30,6 +30,4 @@ const styles = {
   },
 };
 
-const GlobalStyles = ({children}) => children;
-
-export default injectSheet(styles, {named: false})(GlobalStyles);
+export default injectSheet(styles, {named: false})();
