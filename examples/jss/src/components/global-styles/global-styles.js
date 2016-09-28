@@ -1,9 +1,6 @@
-import jss from 'jss';
-import preset from 'jss-preset-default';
+import React from 'react';
+import injectSheet from 'react-jss';
 import 'normalize.css';
-
-// Setup JSS with default preset
-jss.setup(preset());
 
 // Global styles
 const styles = {
@@ -33,5 +30,4 @@ const styles = {
   },
 };
 
-// Attach global styles
-jss.createStyleSheet(styles, { named: false }).attach();
+export default injectSheet(styles, {named: false})();
