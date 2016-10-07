@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "../node_modules/.bin/webpack-dev-server --config webpack.custom.babel.js --content-base build"
+    "start": "../node_modules/.bin/webpack-dev-server --config ../webpack.base.babel.js --content-base build"
   },
   "author": "Max Stoiber",
   "license": "MIT",
