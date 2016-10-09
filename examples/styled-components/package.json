@@ -1,0 +1,11 @@
+{
+  "name": "styled-components-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "../node_modules/.bin/webpack-dev-server --config ../webpack.base.babel.js --content-base build"
+  },
+  "author": "Max Stoiber",
+  "license": "MIT"
+}
