@@ -7,5 +7,8 @@
     "start": "../node_modules/.bin/webpack-dev-server --config ../webpack.base.babel.js --content-base build"
   },
   "author": "Max Stoiber",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^0.2.5"
+  }
 }

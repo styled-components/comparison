@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { global as globalStyles } from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 
 import Tweet from '../tweet';
 import data from '../../../../shared/data/755481795206971392.json';
@@ -7,7 +7,7 @@ import data from '../../../../shared/data/755481795206971392.json';
 import 'normalize.css';
 
 // eslint-disable-next-line no-unused-expressions
-globalStyles`
+injectGlobal`
   html {
     color: #292f33;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
