@@ -1,4 +1,4 @@
-# Aphrodite
+# Radium
 
 *[Repo](https://github.com/FormidableLabs/radium) – [Docs](https://formidable.com/open-source/radium/)*
 
