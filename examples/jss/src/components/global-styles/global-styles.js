@@ -1,4 +1,3 @@
-import React from 'react';
 import injectSheet from 'react-jss';
 import 'normalize.css';
 
@@ -30,4 +29,4 @@ const styles = {
   },
 };
 
-export default injectSheet(styles, {named: false})();
+export default injectSheet(styles, { named: false })();

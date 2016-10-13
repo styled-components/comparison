@@ -183,6 +183,10 @@ svg {
   outline: none;
 }
 
+.footer__button svg {
+  margin: 0 auto;
+}
+
 .footer__liked {
   animation: liked .25s;
   color: #e81c4f;
