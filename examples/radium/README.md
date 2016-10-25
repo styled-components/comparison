@@ -1,4 +1,4 @@
-# Aphrodite
+# Radium
 
 *[Repo](https://github.com/FormidableLabs/radium) – [Docs](https://formidable.com/open-source/radium/)*
 
@@ -32,13 +32,13 @@ export default radium(App);
 
 - ✅ No build requirements
 - ✅ Small and lightweight
-- ❌ Supports global CSS
+- ✅ Supports global CSS
 - ❌ Supports entirety of CSS
 - ✅ Colocated
 - ✅ Isolated
 - ✅ Doesn’t break inline styles (it _is_ inline styles)
 - ✅ Easy to override
-- 😕 Theming (requires wrapping themed components in `radium` call)
+- ✅ Theming
 - ❌ Pre-build
 - ✅ Server side rendering
 - ❌ No wrapper components
