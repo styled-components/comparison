@@ -40,6 +40,7 @@ const App = () => (
 - ❌ Pre-build
 - ✅ Server side rendering
 - ✅ No wrapper components
+- ❌ ReactNative support
 
 <sub><i>Legend: ✅ = Yes, ❌ = No, 😕 = Kinda, refer to notes or parentheses</i><sub>
 
