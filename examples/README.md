@@ -10,11 +10,11 @@
 
 Here are quick links to all the existing examples:
 
-- [Vanilla CSS](./examples/css)
-- [Aphrodite](./examples/aphrodite)
-- [CSS Modules](./examples/css-modules)
-- [JSS](./examples/jss)
-- [Radium](./examples/radium)
-- [`styled-components`](./examples/styled-components)
+- [Vanilla CSS](./css)
+- [Aphrodite](./aphrodite)
+- [CSS Modules](./css-modules)
+- [JSS](./jss)
+- [Radium](./radium)
+- [`styled-components`](./styled-components)
 
 The shared code is inside the `shared/` folder – feel free to check it out too, though it's not very interesting.
