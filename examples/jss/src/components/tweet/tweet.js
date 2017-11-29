@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 
 import Header from '../header';
@@ -12,8 +13,8 @@ const styles = {
   },
 };
 
-const Tweet = ({ data, sheet }) => (
-  <div className={sheet.classes.container}>
+const Tweet = ({ data, classes }) => (
+  <div className={classes.container}>
     <Header
       name={data.user.name}
       profileImageUrl={data.user.profile_image_url_https}

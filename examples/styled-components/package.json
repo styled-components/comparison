@@ -9,6 +9,6 @@
   "author": "Max Stoiber",
   "license": "MIT",
   "dependencies": {
-    "styled-components": "^0.2.5"
+    "styled-components": "^2.2.4"
   }
 }
