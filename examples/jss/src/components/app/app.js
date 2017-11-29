@@ -17,7 +17,7 @@ const styles = {
   },
 };
 
-const App = ({ sheet: { classes } }) => (
+const App = ({ classes, children }) => (
   <div className={classes.container}>
     <Tweet data={data} />
   </div>

@@ -9,8 +9,8 @@
   "author": "Max Stoiber",
   "license": "MIT",
   "devDependencies": {
-    "style-loader": "0.13.1",
-		"css-loader": "0.25.0"
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0"
   },
   "dependencies": {
     "aphrodite": "0.5.0"

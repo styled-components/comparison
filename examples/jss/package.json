@@ -9,9 +9,10 @@
   "author": "Max Stoiber",
   "license": "MIT",
   "devDependencies": {
-    "css-loader": "0.25.0",
-    "react-jss": "4.0.3",
-    "style-loader": "0.13.1"
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-jss": "^8.1.0"
+  }
 }

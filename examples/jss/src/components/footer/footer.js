@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 
 import ReplyIcon from '../../../../shared/assets/reply.svg';
@@ -87,35 +88,35 @@ class Footer extends Component {
   }
 
   render() {
-    const { createdAt, favoriteCount, retweetCount, sheet } = this.props;
+    const { createdAt, favoriteCount, retweetCount, classes } = this.props;
     const { liked } = this.state;
 
     return (
       <div>
-        <div className={sheet.classes.date}>{createdAt}</div>
-        <div className={sheet.classes.counters}>
+        <div className={classes.date}>{createdAt}</div>
+        <div className={classes.counters}>
           <span>
-            <span className={sheet.classes.value}>{retweetCount}</span>
-            <span className={sheet.classes.label}> Retweets</span>
+            <span className={classes.value}>{retweetCount}</span>
+            <span className={classes.label}> Retweets</span>
           </span>
-          <span className={sheet.classes.favorite}>
-            <span className={sheet.classes.value}>
+          <span className={classes.favorite}>
+            <span className={classes.value}>
               {liked ? favoriteCount + 1 : favoriteCount}
             </span>
-            <span className={sheet.classes.label}> Likes</span>
+            <span className={classes.label}> Likes</span>
           </span>
         </div>
-        <div className={sheet.classes.actions}>
-          <div className={sheet.classes.icon}>
+        <div className={classes.actions}>
+          <div className={classes.icon}>
             <ReplyIcon />
           </div>
-          <div className={sheet.classes.icon}>
+          <div className={classes.icon}>
             <RetweetIcon />
           </div>
-          <button className={sheet.classes.button} onClick={this.handleClick}>
-            <LikeIcon className={liked && sheet.classes.liked} />
+          <button className={classes.button} onClick={this.handleClick}>
+            <LikeIcon className={liked && classes.liked} />
           </button>
-          <div className={sheet.classes.icon}>
+          <div className={classes.icon}>
             <MoreIcon />
           </div>
         </div>

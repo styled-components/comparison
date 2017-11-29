@@ -20,10 +20,10 @@ export default extendBaseConfig({
           {
             loader: 'postcss-loader',
             options: {
-              plugins: (loader) => [
+              plugins: (loader) => ([
                 autoprefixer,
                 values
-              ]
+              ])
             }
           }
         ])

@@ -10,8 +10,9 @@
   "author": "Max Stoiber <contact@mxstbr.com> (http://mxstbr.com)",
   "license": "MIT",
   "dependencies": {
-    "react": "15.2.1",
-    "react-dom": "15.2.1"
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

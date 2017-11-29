@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 
 const styles = {
@@ -39,17 +40,17 @@ const styles = {
   },
 };
 
-const Header = ({ name, profileImageUrl, screenName, url, sheet }) => (
-  <div className={sheet.classes.header}>
-    <div className={sheet.classes.profile}>
+const Header = ({ name, profileImageUrl, screenName, url, classes }) => (
+  <div className={classes.header}>
+    <div className={classes.profile}>
       <a target="_blank" href={url}>
-        <img className={sheet.classes.image} src={profileImageUrl} alt={name} />
+        <img className={classes.image} src={profileImageUrl} alt={name} />
       </a>
     </div>
-    <div className={sheet.classes.user}>
-      <a className={sheet.classes.url} target="_blank" href={url}>
-        <span className={sheet.classes.name}>{name}</span>
-        <span className={sheet.classes.screenName}>@{screenName}</span>
+    <div className={classes.user}>
+      <a className={classes.url} target="_blank" href={url}>
+        <span className={classes.name}>{name}</span>
+        <span className={classes.screenName}>@{screenName}</span>
       </a>
     </div>
   </div>

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 
 const styles = {
@@ -28,7 +29,7 @@ const styles = {
   },
 };
 
-const Content = ({ text, media, sheet: { classes } }) => (
+const Content = ({ text, media, classes }) => (
   <div>
     <p className={classes.text} dangerouslySetInnerHTML={{ __html: text }} />
     <a className={classes.media} target="_blank" href={media.expanded_url}>
