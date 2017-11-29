@@ -33,20 +33,20 @@ const config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
       },
       {
         test: /\.css$/,
         include: /node_modules/,
-        loader: 'style!css',
+        loader: 'style-loader!css-loader',
       },
       {
         test: /\.svg$/,
-        loader: 'babel!svg-react',
+        loader: 'babel-loader!svg-react-loader',
       },
       {
         test: /\.json$/,
-        loader: 'json',
+        loader: 'json-loader',
       },
     ],
   },
