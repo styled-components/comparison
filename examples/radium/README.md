@@ -34,6 +34,7 @@ export default radium(App);
 - ✅ Small and lightweight
 - ✅ Supports global CSS
 - ❌ Supports entirety of CSS
+- ❌ Sourcemaps
 - ✅ Colocated
 - ✅ Isolated
 - ✅ Doesn’t break inline styles (it _is_ inline styles)
