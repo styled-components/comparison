@@ -1,4 +1,4 @@
-# JSS
+# React-JSS
 
 *[Repo](https://github.com/cssinjs/jss) – [Docs](https://github.com/cssinjs/jss/tree/master/docs)*
 
@@ -32,13 +32,13 @@ export default injectSheet(styles)(App);
 
 - ✅ No build requirements
 - ✅ Small and lightweight
-- 😕 Supports global CSS (requires separate setup)
+- ✅ Supports global CSS
 - ✅ Supports entirety of CSS
 - ✅ Colocated
 - ✅ Isolated
 - ✅ Doesn’t break inline styles
-- 😕 Easy to override (inline styles, but no standard mechanism)
-- ❌ Theming
+- ✅ Easy to override
+- ✅ Theming
 - ❌ Pre-build
 - ✅ Server side rendering
 - ❌ No wrapper components
