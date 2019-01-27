@@ -1,3 +1,12 @@
+# ⚠️ WARNING: This repository is completely out of date, it was made in 2016. Do not rely on any of this information! ⚠️
+
+<br />
+<br />
+<br />
+
+<details>
+  <summary>Click here if you really want to see the old, out of date readme</summary>
+
 # Comparison
 
 A deeper comparison between a selected few libraries for styling react applications and component libraries.
@@ -24,6 +33,12 @@ Here are quick links to all the existing examples: (or just check out the `examp
 We have issues open for the frameworks we're planning on implementing; if you think there's a strong case for adding one that's not on our list please open an issue to let us know!
 
 *For a complete reference with less deep-div of all the available frameworks see [MicheleBertoli/css-in-js](https://github.com/MicheleBertoli/css-in-js)*
+
+</details>
+
+<br />
+<br />
+<br />
 
 ## License
 
