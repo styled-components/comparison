@@ -1,0 +1,29 @@
+{
+  "name": "glamor-tweet",
+  "version": "1.0.0",
+  "description": "css-in-js comparison example in glamor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o bundle.js -t babelify -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glamor": "^2.13.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0"
+  },
+  "babel": {
+    "presets": ["es2015", "stage-0", "react"],
+    "plugins": ["transform-decorators-legacy"]
+  }
+}
