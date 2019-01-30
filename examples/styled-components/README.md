@@ -32,6 +32,7 @@ const App = () => (
 - ✅ Small and lightweight
 - ✅ Supports global CSS
 - ✅ Supports entirety of CSS
+- ❌ Sourcemaps
 - ✅ Colocated
 - ✅ Isolated
 - ✅ Doesn’t break inline styles

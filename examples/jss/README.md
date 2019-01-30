@@ -34,6 +34,7 @@ export default injectSheet(styles)(App);
 - ✅ Small and lightweight
 - 😕 Supports global CSS (requires separate setup)
 - ✅ Supports entirety of CSS
+- ❌ Sourcemaps
 - ✅ Colocated
 - ✅ Isolated
 - ✅ Doesn’t break inline styles
