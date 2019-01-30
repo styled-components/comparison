@@ -46,4 +46,4 @@ const App = () => (
 #### Notes
 
 - Enforces best practices (small, focussed components; split smart and dumb) by removing the mapping between styles and components
-- Let's you write actual CSS in your JavaScript
+- Let you write actual CSS in your JavaScript
